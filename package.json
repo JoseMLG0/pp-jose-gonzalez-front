@@ -1,0 +1,70 @@
+{
+  "name": "frontend-packpack",
+  "version": "1.0.0",
+  "description": "FrontEnd Actividad",
+  "scripts": {
+    "build": "npm run build:dev",
+    "prebuild:dev": "npm run clean:dev",
+    "build:dev": "webpack --config webpack.config.js",
+    "prebuild:prd": "npm run clean:prd",
+    "build:prd": "webpack --config webpack.config.js",
+    "clean:dev": "rimraf .tmp",
+    "clean:prd": "rimraf public",
+    "start": "npm run serve:dev",
+    "serve:dev": "webpack-dev-server --config webpack.config.js",
+    "preserve:prd": "npm run build:prd",
+    "serve:prd": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "pp-jose-landero-front"
+  },
+  "keywords": [
+    "frontend",
+    "packpack",
+    "actividad"
+  ],
+  "author": "José Manuel Landero González",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/angular": "^1.6.57",
+    "@types/angular-ui-router": "^1.1.40",
+    "@types/core-js": "^2.5.2",
+    "@types/node": "^13.5.1",
+    "@types/webpack-env": "^1.13.6",
+    "awesome-typescript-loader": "^5.2.1",
+    "core-js": "^3.6.4",
+    "coveralls": "^3.0.9",
+    "css-loader": "^3.4.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^5.0.2",
+    "font-awesome": "^4.7.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.12.1",
+    "istanbul-instrumenter-loader": "^3.0.1",
+    "ng-annotate-loader": "^0.6.1",
+    "node-sass": "^4.12.0",
+    "remap-istanbul": "^0.13.0",
+    "rimraf": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.2",
+    "tslint": "^5.20.1",
+    "tslint-loader": "^3.6.0",
+    "typescript": "^3.1.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@types/angular-storage": "0.0.33",
+    "@uirouter/angularjs": "1.0.21",
+    "angular": "^1.7.9",
+    "angular-moment": "^1.3.0",
+    "angular-storage": "0.0.15",
+    "bootstrap": "^4.1.3",
+    "moment": "^2.27.0"
+  }
+}

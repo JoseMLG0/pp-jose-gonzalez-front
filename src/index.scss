@@ -1,0 +1,9 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}

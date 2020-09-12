@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "skipLibCheck": true,
+        "lib": [
+            "es6",
+            "dom"
+        ]
+    },
+    "include": ["**/*"],
+    "exclude": [],
+}
